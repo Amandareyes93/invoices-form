@@ -1,0 +1,42 @@
+.invoice-form {
+  height: 100%;
+}
+
+.form-grid {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+  gap: 5px;
+
+
+}
+
+.content-table {
+  max-height: 70%;
+  overflow-y: scroll;
+}
+
+label {
+  display: flex;
+  gap: 5px;
+}
+
+
+.button-form {
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .content-table {
+    width: 70%;
+  }
+}
