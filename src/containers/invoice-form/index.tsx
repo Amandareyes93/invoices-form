@@ -1,9 +1,8 @@
 /* eslint-disable no-debugger */
-import { useForm } from 'react-hook-form';
-import { IProduct } from '../../interfaces';
 import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { IProduct, IInvoiceForm, IInvoiceFormProps, ITr } from '../../interfaces';
 import { Button } from '../../components';
-import { IInvoiceForm, IInvoiceFormProps, ITr } from '../../interfaces';
 import './index.css';
 
 export default function InvoiceForm({ callbackSubmitInvoice, products }: IInvoiceFormProps) {
