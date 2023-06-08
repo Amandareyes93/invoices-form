@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
 }
 
@@ -37,6 +38,6 @@ label {
 
 @media (max-width: 500px) {
   .content-table {
-    width: 70%;
+    width: 80%;
   }
 }

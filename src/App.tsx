@@ -38,14 +38,13 @@ export default function App() {
   };
 
   return (
-    <>
-      <Button text="Create Invoice" onClick={handleCreateInvoice} />
-
+    <div className="app-content">
       <Modal title="New Invoice" isOpen={isModalOpen} onClick={() => setIsModalOpen(false)}>
         <InvoiceForm products={productsResponse.products} callbackSubmitInvoice={callbackSubmitInvoice} />
       </Modal>
 
+      <Button text="Create Invoice" onClick={handleCreateInvoice} />
       <InvoicesTable data={dataInvoiced} />
-    </>
+    </div>
   );
 }

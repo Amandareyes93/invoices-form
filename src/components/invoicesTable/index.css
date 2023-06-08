@@ -1,0 +1,60 @@
+.table-container {
+  display: flex;
+  overflow: auto;
+}
+
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  padding: 8px;
+  text-align: left;
+  background-color: rgba(79, 73, 67, 0.632);
+  text-align: center;
+  color: rgb(5, 177, 177);
+}
+
+
+
+@media (max-width: 600px) {
+  .table-container {
+    display: flex;
+    overflow: auto;
+    height: 40rem;
+  }
+
+  .responsive-table {
+    display: block;
+    overflow-x: auto;
+    overflow-y: scroll;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr {
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  tbody td {
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    border: none;
+  }
+
+  tbody td::before {
+    font-weight: bold;
+    content: attr(data-label);
+    display: block;
+  }
+}

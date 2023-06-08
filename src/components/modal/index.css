@@ -14,7 +14,7 @@
     width: 500px;
     height: 500px;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background-color: rgb(32 35 42);
     padding: 1rem;
     display: flex;
     flex-direction: column;
