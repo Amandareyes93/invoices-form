@@ -18,6 +18,9 @@ th {
   color: rgb(5, 177, 177);
 }
 
+td {
+  text-align: center;
+}
 
 
 @media (max-width: 600px) {
@@ -30,7 +33,7 @@ th {
   .responsive-table {
     display: block;
     overflow-x: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
 
   thead {
@@ -54,7 +57,6 @@ th {
 
   tbody td::before {
     font-weight: bold;
-    content: attr(data-label);
     display: block;
   }
 }
